@@ -1,0 +1,129 @@
+body {
+  font-family: "Roboto";
+}
+body .container-fluid {
+  --bs-gutter-x: 35px;
+}
+body .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1111;
+  width: 100%;
+}
+body .site-header a img {
+  width: 102px;
+  height: 55px;
+}
+body .site-header .icon-btn {
+  flex-direction: column;
+}
+body .site-header .icon-btn .icon-one {
+  display: inline-flex;
+  margin-left: -8px;
+  margin-bottom: 10px;
+}
+body .site-header .icon-btn * {
+  display: inline-flex;
+}
+body .site-header.stick-header {
+  background: #242424;
+}
+body .site-header .offcanvas {
+  height: 100vh;
+  background: #000000;
+}
+body .site-header .offcanvas .btn-close {
+  filter: brightness(0) invert(1);
+}
+body .site-header .offcanvas .offcanvas-body {
+  height: calc(100vh - 64px);
+}
+body .site-header .offcanvas .offcanvas-body ul li a {
+  font: italic normal bold 40px/80px Roboto;
+  letter-spacing: 0px;
+  color: #ffffff;
+  text-decoration: none;
+}
+body .site-banner {
+  background: #202020 url(../image/home-banner.png) no-repeat center center/cover;
+  padding: 194px 0 52px 0;
+}
+body .site-banner h1 {
+  text-align: left;
+  font: normal normal 900 40px/48px Roboto;
+  letter-spacing: 5.4px;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding-top: 114px;
+  padding-bottom: 113px;
+  position: relative;
+}
+body .site-banner h1::after {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background: url(../image/banner-shap.png) no-repeat center left;
+  background-size: contain;
+  left: 0;
+  top: 0;
+}
+body .site-banner h1 span {
+  position: relative;
+  z-index: 11;
+  display: inline-block;
+}
+
+@media only screen and (min-width: 991px) {
+  body .container-fluid {
+    --bs-gutter-x: 8rem;
+  }
+  body .logo-mobile {
+    opacity: 0;
+    pointer-events: none;
+  }
+  body .site-header a img {
+    width: auto;
+    height: auto;
+  }
+  body .site-header .offcanvas .offcanvas-body ul li a {
+    text-align: left;
+    font: italic normal bold 80px/120px Roboto;
+    letter-spacing: 0px;
+    color: #ffffff;
+    text-decoration: none;
+  }
+  body .site-banner h1 {
+    font: normal normal 900 90px/109px Roboto;
+  }
+  body .site-banner h1::after {
+    width: 80%;
+  }
+  body .site-banner h1 span {
+    padding: 0 0 0 15rem;
+  }
+}
+@media only screen and (max-width: 1199px) {
+  body .site-banner {
+    height: 100vh;
+    padding: 139px 0 52px 0;
+  }
+  body .site-banner h1 {
+    padding-top: 20px;
+  }
+  body .site-banner h1 span {
+    padding: 0 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  body .site-banner h1::after {
+    background: url(../image/shap-mobile.png) no-repeat top left;
+  }
+}
+@media only screen and (max-width: 480px) {
+  body .site-banner h1 {
+    font: normal normal 900 26px/130% Roboto;
+  }
+}/*# sourceMappingURL=style.css.map */
